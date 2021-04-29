@@ -25,12 +25,14 @@
     <policies>
         <policy id="base-uri">
             <values>
-                <value id="https-www-paypalobjects-com" type="host">https://www.paypalobjects.com</value>
+                <value id="https-www-paypalobjects-com"
+                       type="host">https://www.paypalobjects.com</value>
             </values>
         </policy>
         <policy id="form-action">
             <values>
-                <value id="https-www-sandbox-paypal-com" type="host">https://www.sandbox.paypal.com</value>
+                <value id="https-www-sandbox-paypal-com"
+                       type="host">https://www.sandbox.paypal.com</value>
             </values>
         </policy>
     </policies>

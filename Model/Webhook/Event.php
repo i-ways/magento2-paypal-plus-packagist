@@ -273,7 +273,7 @@ class Event
             // get proper order
             $resource = $webhookEvent->getResource();
             if (!$resource) {
-                $this->logger->critica('Event resource not found.');
+                $this->logger->critical('Event resource not found.');
                 // throw new \Exception('Event resource not found.');
             }
 

@@ -17,16 +17,22 @@
  * @link     https://www.i-ways.net
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Iways\PayPalPlus\Api\GuestPPPPaymentInformationManagementInterface" type="Iways\PayPalPlus\Model\PaymentInformationManagement\GuestPPPPaymentInformationManagement" />
-    <preference for="Iways\PayPalPlus\Api\PPPPaymentInformationManagementInterface" type="Iways\PayPalPlus\Model\PaymentInformationManagement\PPPPaymentInformationManagement" />
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Iways\PayPalPlus\Api\GuestPPPPaymentInformationManagementInterface"
+                type="Iways\PayPalPlus\Model\PaymentInformationManagement\GuestPPPPaymentInformationManagement" />
+    <preference for="Iways\PayPalPlus\Api\PPPPaymentInformationManagementInterface"
+                type="Iways\PayPalPlus\Model\PaymentInformationManagement\PPPPaymentInformationManagement" />
     <type name="Magento\Sales\Model\Order\Payment">
-        <plugin name="addPppAttributes" type="Iways\PayPalPlus\Plugin\Sales\Model\Order\PaymentPlugin" />
+        <plugin name="addPppAttributes"
+                type="Iways\PayPalPlus\Plugin\Sales\Model\Order\PaymentPlugin" />
     </type>
     <type name="Magento\Payment\Model\MethodList">
-        <plugin name="paymentAddPpp" type="Iways\PayPalPlus\Plugin\Payment\Model\MethodListPlugin" />
+        <plugin name="paymentAddPpp"
+                type="Iways\PayPalPlus\Plugin\Payment\Model\MethodListPlugin" />
     </type>
     <type name="Magento\Config\Model\Config\Structure\Element\Group">
-        <plugin name="dynamic_config_groups" type="Iways\PayPalPlus\Plugin\Config\Structure\Element\Group" />
+        <plugin name="dynamic_config_groups"
+                type="Iways\PayPalPlus\Plugin\Config\Structure\Element\Group" />
     </type>
 </config>

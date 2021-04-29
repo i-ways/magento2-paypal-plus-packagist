@@ -17,9 +17,11 @@
  * @link     https://www.i-ways.net
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="paypalplus" frontName="paypalplus">
+        <route id="paypalplus"
+               frontName="paypalplus">
             <module name="Iways_PayPalPlus" />
         </route>
     </router>

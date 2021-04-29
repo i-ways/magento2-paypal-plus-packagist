@@ -20,20 +20,25 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <!-- Managing payment guest information -->
-    <route url="/V1/guest-carts/:cartId/set-ppp-payment-information" method="POST">
-        <service class="Iways\PayPalPlus\Api\GuestPPPPaymentInformationManagementInterface" method="savePaymentInformation" />
+    <route url="/V1/guest-carts/:cartId/set-ppp-payment-information"
+           method="POST">
+        <service class="Iways\PayPalPlus\Api\GuestPPPPaymentInformationManagementInterface"
+                 method="savePaymentInformation" />
         <resources>
             <resource ref="anonymous" />
         </resources>
     </route>
     <!-- Managing My shipping information -->
-    <route url="/V1/carts/mine/set-ppp-payment-information" method="POST">
-        <service class="Iways\PayPalPlus\Api\PPPPaymentInformationManagementInterface" method="savePaymentInformation" />
+    <route url="/V1/carts/mine/set-ppp-payment-information"
+           method="POST">
+        <service class="Iways\PayPalPlus\Api\PPPPaymentInformationManagementInterface"
+                 method="savePaymentInformation" />
         <resources>
             <resource ref="self" />
         </resources>
         <data>
-            <parameter name="cartId" force="true">%cart_id%</parameter>
+            <parameter name="cartId"
+                       force="true">%cart_id%</parameter>
         </data>
     </route>
 </routes>

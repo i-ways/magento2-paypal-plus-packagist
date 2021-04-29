@@ -17,8 +17,10 @@
  * @link     https://www.i-ways.net
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Iways_PayPalPlus" setup_version="1.3.5">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Iways_PayPalPlus"
+            setup_version="1.3.6">
         <sequence>
             <module name="Magento_Paypal" />
         </sequence>

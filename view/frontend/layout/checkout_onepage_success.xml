@@ -13,15 +13,18 @@
  * License http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="Iways_PayPalPlus::css/iways-paypalplus.css"/>
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Iways\PayPalPlus\Block\Onepage\Success" name="paypalplus.info" cacheable="false"
-                   template="Iways_PayPalPlus::paypalplus/success.phtml"/>
+            <block class="Iways\PayPalPlus\Block\Onepage\Success"
+                   name="paypalplus.info"
+                   cacheable="false"
+                   template="Iways_PayPalPlus::paypalplus/success.phtml" />
         </referenceContainer>
     </body>
 </page>

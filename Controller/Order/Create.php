@@ -145,6 +145,10 @@ class Create extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         try {
+            /* this seems to help with loss of checkout session
+            after finalizing payment and returning back from PP server*/
+            $this->getRequest()->setParams(['ajax' => 1]);
+
             $cartId = $this->checkoutSession->getQuoteId();
             $result = new DataObject();
             if ($this->customerSession->isLoggedIn()) {
